@@ -1,4 +1,4 @@
-# Tema-2-AA-skel 
+# Tema2
 
 ## Changelog
 
