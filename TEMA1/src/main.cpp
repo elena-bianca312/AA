@@ -72,13 +72,6 @@ int main(int argc, char *argv[]) {
         graph[i] = (int *) calloc(3, sizeof(int));
     }
 
-//    for(int i = 0; i < N; i++) {
-//        for(int j = 0; j < N; j++)
-//            cout<<graphDijkstra[i][j] << " ";
-//        cout<<endl;
-//    }
-//    cout<<"//////////////////"<<endl;
-
     int l = 0;
     for (unsigned int k = 3; k < index.size(); k = k + 3) {
         graph[l][0] = index[k] - 1;
@@ -88,12 +81,6 @@ int main(int argc, char *argv[]) {
             max = index[k + 2];
         l++;
     }
-
-//    for(int i = 0; i < M; i++) {
-//        for(int j = 0; j < 3; j++)
-//            cout<<graph[i][j] << " ";
-//        cout<<endl;
-//    }
 
     if (test_type == "Dijkstra") {
         algo1 x1;
@@ -113,7 +100,6 @@ int main(int argc, char *argv[]) {
 
     auto stop = high_resolution_clock::now();
     auto duration = (float) duration_cast<microseconds>(stop - start).count();
-    //std::to_string(duration);
     cout<<duration<<" microseconds";
 
     in.close();
