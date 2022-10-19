@@ -1,0 +1,31 @@
+---------------------------------
+--------------TREAP--------------
+---------------------------------
+Constructed Treap:
+
+data: 1 | priority: 12
+data: 2 | priority: 31 | left child: 1 | right child: 3
+data: 3 | priority: 22
+data: 4 | priority: 77 | left child: 2 | right child: 5
+data: 5 | priority: 63
+
+Deleting min (1) node :
+
+data: 2 | priority: 31 | right child: 3
+data: 3 | priority: 22
+data: 4 | priority: 77 | left child: 2 | right child: 5
+data: 5 | priority: 63
+
+
+--------------------------------
+--------------HEAP--------------
+--------------------------------
+Constructed Heap:
+
+1, 2, 4, 5, 3
+
+
+Deleting min (1) node :
+
+2, 3, 4, 5
+
